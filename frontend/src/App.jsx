@@ -6,6 +6,7 @@ import HeroSection from './component/HeroSection'
 import Features from './component/Features'
 import CoreFeature from './component/CoreFeature'
 import GridBoxes from './component/GridBoxes'
+import FreeTutorial from './component/FreeTutorial'
 
 const App = () => {
   return (
@@ -14,7 +15,7 @@ const App = () => {
     <HeroSection/>
     <Features/>
     <CoreFeature/>
-    {/* <GridBoxes/> */}
+    <FreeTutorial/>
     </>
   )
 }
