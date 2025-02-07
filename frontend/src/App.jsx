@@ -1,12 +1,16 @@
 import React from 'react'
+import './index.css'
+
+import Header from './component/Header'
+import HeroSection from './component/HeroSection'
 
 const App = () => {
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-    </div>
+    <>
+    {/* <Header/> */}
+    <HeroSection/>
+
+    </>
   )
 }
 
