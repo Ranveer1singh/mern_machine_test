@@ -1,17 +1,20 @@
 import React from 'react'
-import './index.css'
+// import './index.css'
 
 import Header from './component/Header'
 import HeroSection from './component/HeroSection'
-import Hero from './component/Hero'
+import Features from './component/Features'
+import CoreFeature from './component/CoreFeature'
+import GridBoxes from './component/GridBoxes'
 
 const App = () => {
   return (
     <>
     <Header/>
-    {/* <Hero/> */}
     <HeroSection/>
-
+    <Features/>
+    <CoreFeature/>
+    {/* <GridBoxes/> */}
     </>
   )
 }
