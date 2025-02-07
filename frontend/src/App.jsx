@@ -7,6 +7,7 @@ import Features from './component/Features'
 import CoreFeature from './component/CoreFeature'
 import GridBoxes from './component/GridBoxes'
 import FreeTutorial from './component/FreeTutorial'
+import Faq from './component/Faq'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
     <Features/>
     <CoreFeature/>
     <FreeTutorial/>
+    <Faq/>
     </>
   )
 }
