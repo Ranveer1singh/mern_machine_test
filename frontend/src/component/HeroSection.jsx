@@ -4,10 +4,10 @@ import Image2 from "../assets/images/pattern.png";
 import Logo from "../assets/images/logo.png"
 const HeroSection = () => {
   return (
-    <div className="container w-full h-full">
-      <div className=" grid  grid-cols-2">
-        <div className="left_section  background_gradient flex flex-col justify-center items-center">
-          <div className="head_box  w-1/2 p-4 ">
+    <div className="container w-full h-screen  background_gradient ">
+      <div className=" grid  grid-cols-2 pt-4 ">
+        <div className="left_section   flex flex-col justify-center items-center pt-5">
+          <div className="head_box  w-1/2 p-4   mt-4">
             <div className="star ">
               <i class="ri-star-s-fill"></i>
               <i class="ri-star-s-fill"></i>
@@ -61,9 +61,9 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-        <div className="right_section">
+        <div className="right_section mt-14">
           <div className="image ">
-            <img className=" h-[500px] w-[500px]" src={Image1} alt="Hello" />
+            <img className=" h-[500] w-[450px]" src={Image1} alt="Hello" />
             {/* <img className="h-[300px] w-[300px]" src={Image2} alt="Hello" /> */}
           </div>
         </div>
