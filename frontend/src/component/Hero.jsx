@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../assets/images/logo.png";
 import Image1 from "../assets/images/image.png";
 import Image2 from "../assets/images/pattern.png";
+import video from "../assets/Video/video.mp4"
 const Hero = () => {
   return (
     <div className="container relative">
@@ -54,8 +55,11 @@ const Hero = () => {
          <div className="pattern_image absolute top-20 right-32">
                     <img className="h-[300px] w-[300px]" src={Image2} alt="Hello" />
                   </div>
-                  <div className="image absolute top-28 right-48 object-cover  object-center h-[450px] w-[400px]">
-                    <img className=" " src={Image1} alt="Hello" />
+                  <div className="image absolute top-28 right-48  h-[450px] w-[400px]">
+                    <video className="object-cover  object-center w-full h-full" controls  autoplay src={video} >
+                      {/* <source src={video} type="video/mp4"/> */}
+                    </video>
+                    {/* <img className=" " src={Image1} alt="Hello" /> */}
                   </div>
                   
                 </div>
