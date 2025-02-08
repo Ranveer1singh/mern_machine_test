@@ -2,8 +2,22 @@ import React from "react";
 import Logo from "../assets/images/logo.png";
 import Image1 from "../assets/images/image.png";
 import Image2 from "../assets/images/pattern.png";
-import video from "../assets/Video/video.mp4"
+import video from "../assets/Video/video.mp4";
+import { useRef, useState } from "react";
+
 const Hero = () => {
+  const videoRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const togglePlayPause = () => {
+    if (videoRef.current) {
+      if (isPlaying) {
+        videoRef.current.pause();
+      } else {
+        videoRef.current.play();
+      }
+      setIsPlaying(!isPlaying);
+    }
+  };
   return (
     <div className="container relative">
       <div className="main_layout w-full h-screen flex">
@@ -15,11 +29,11 @@ const Hero = () => {
         >
           <div className="head_box  w-1/2 p-4   mt-4">
             <div className="star ">
-              <i class="ri-star-s-fill"></i>
-              <i class="ri-star-s-fill"></i>
-              <i class="ri-star-s-fill"></i>
-              <i class="ri-star-s-fill"></i>
-              <i class="ri-star-line"></i>
+              <i className="ri-star-s-fill"></i>
+              <i className="ri-star-s-fill"></i>
+              <i className="ri-star-s-fill"></i>
+              <i className="ri-star-s-fill"></i>
+              <i className="ri-star-line"></i>
               <span className="text-sm pl-2">
                 Trusted By Over 4,322 students
               </span>
@@ -51,18 +65,24 @@ const Hero = () => {
             </div>
           </div>
         </div>
-         <div className="right mt-14">
-         <div className="pattern_image absolute top-20 right-32">
-                    <img className="h-[300px] w-[300px]" src={Image2} alt="Hello" />
-                  </div>
-                  <div className="image absolute top-28 right-48  h-[450px] w-[400px]">
-                    <video className="object-cover  object-center w-full h-full" controls  autoplay src={video} >
-                      {/* <source src={video} type="video/mp4"/> */}
-                    </video>
-                    {/* <img className=" " src={Image1} alt="Hello" /> */}
-                  </div>
-                  
-                </div>
+        <div className="right mt-14">
+          <div className="pattern_image absolute top-20 right-32">
+            <img className="h-[300px] w-[300px]" src={Image2} alt="Hello" />
+          </div>
+          <div className="image absolute top-28 right-48 h-[450px] w-[400px]">
+            <video
+              ref={videoRef}
+              className=" object-cover object-center w-full h-full"
+              src={video}
+            />
+            <button
+              onClick={togglePlayPause}
+              className="absolute bottom-1/2 left-1/2 transform -translate-x-1/2 bg-gray-200 bg-opacity-75 text-white px-5 py-4 rounded-full"
+            >
+              {isPlaying ? <i className="ri-pause-line text-[20px]"></i> :<i className="ri-play-large-fill text-[20px]"></i>}
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );

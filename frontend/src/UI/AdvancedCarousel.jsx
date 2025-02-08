@@ -49,11 +49,11 @@ export default function AdvancedCarousel() {
                    </div>
                    <div class="p-4 ">
                      <div className="">
-                       <i class="ri-star-s-fill text-yellow-400"></i>
-                       <i class="ri-star-s-fill  text-yellow-400"></i>
-                       <i class="ri-star-s-fill  text-yellow-400"></i>
-                       <i class="ri-star-s-fill  text-yellow-400"></i>
-                       <i class="ri-star-line  text-yellow-400"></i>
+                       <i className="ri-star-s-fill text-yellow-400"></i>
+                       <i className="ri-star-s-fill  text-yellow-400"></i>
+                       <i className="ri-star-s-fill  text-yellow-400"></i>
+                       <i className="ri-star-s-fill  text-yellow-400"></i>
+                       <i className="ri-star-line  text-yellow-400"></i>
                        <span className="ml-2 text-[10px]">5.0 (329 Reviews)</span>
                      </div>
                      <h6 class="mb-2 text-slate-800 text-md font-semibold">
