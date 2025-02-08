@@ -3,10 +3,10 @@ import React from 'react'
 const CoreFeature = () => {
   return (
     <div className="container mt-10">
- <div className="flex flex-col lg:flex-row items-center justify-center gap-10 px-10 py-16 bg-gray-50 ">
+ <div className="flex flex-col lg:flex-row items-center justify-center gap-10 px-10 py-16  ">
       {/* Left Section - Stats Boxes */}
       <div className="grid grid-cols-1 gap-4 grid-rows-5   ">
-        <div className="bg-white shadow-md  flex flex-col  hover:border-slate-300 hover:shadow-lg rounded justify-center items-center text-center p-4 text-orange-500 text-2xl font-bold 
+        <div className="bg-white shadow-[18px_16px_65px_19px_rgba(59,_130,_246,_0.15)]  flex flex-col  hover:border-slate-300 hover:shadow-[18px_16px_65px_19px_rgba(0,_0,_0,_0.15)] rounded justify-center items-center text-center p-4 text-orange-500 text-2xl font-bold 
           col-start-1 row-start-2 row-span-2" style={{
             height : "250px",
             width : "300px"
@@ -14,17 +14,17 @@ const CoreFeature = () => {
           <h2 className='text-[40px]'>80K+</h2>
           <p className="text-gray-600 text-[15px] font-normal ">We have more than students</p>
         </div>
-        <div className="bg-white shadow-md  flex flex-col hover:border-slate-300 hover:shadow-lg rounded justify-center items-center text-center p-4 text-red-500 text-2xl font-bold 
+        <div className="bg-white shadow-[18px_16px_65px_19px_rgba(59,_130,_246,_0.15)]  flex flex-col hover:border-slate-300 hover:shadow-[18px_16px_65px_19px_rgba(0,_0,_0,_0.15)] rounded justify-center items-center text-center p-4 text-red-500 text-2xl font-bold 
           col-start-1 row-start-4 row-span-2">
           <h2  className='text-[40px]' >150+</h2>
           <p className="text-gray-600 text-[15px] font-normal ">Free online tutorials videos available</p>
         </div>
-        <div className="bg-white shadow-md  flex flex-col hover:border-slate-300 hover:shadow-lg rounded justify-center items-center text-center p-4 text-pink-500 text-2xl font-bold 
+        <div className="bg-white shadow-[18px_16px_65px_19px_rgba(59,_130,_246,_0.15)]  flex flex-col hover:border-slate-300 hover:shadow-[18px_16px_65px_19px_rgba(0,_0,_0,_0.15)] rounded justify-center items-center text-center p-4 text-pink-500 text-2xl font-bold 
           col-start-2 row-start-1 row-span-2">
           <h2  className='text-[40px]'>90+</h2>
           <p className="text-gray-600 text-[15px] font-normal ">Daily updated blog post maintain</p>
         </div>
-        <div className="bg-white shadow-md  flex flex-col hover:border-slate-300 hover:shadow-lg rounded justify-center items-center text-center p-4 text-purple-500 text-2xl font-bold 
+        <div className="bg-white shadow-[18px_16px_65px_19px_rgba(59,_130,_246,_0.15)]  flex flex-col hover:border-slate-300 hover:shadow-[18px_16px_65px_19px_rgba(0,_0,_0,_0.15)] rounded justify-center items-center text-center p-4 text-purple-500 text-2xl font-bold 
           col-start-2 row-start-3 row-span-2">
           <h2  className='text-[40px]'>& 3M</h2>
           <p className="text-gray-600 text-[15px] font-normal ">Job posted everydays with qualification</p>
