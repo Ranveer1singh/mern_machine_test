@@ -13,13 +13,20 @@ const userSchema = new mongoose.Schema({
         trim : true
     },
     password : {
-        type : string,
+        type : String,
         required : true,
         trim : true
 
     }
 },
-{
+{toJSON : {
+    transform(doc,ret){
+        delete ret.password,
+        delete ret.__v,
+        delete ret.createdAt,
+        delete ret.updatedAt
+    }
+},
     timestamps : true
 }
 )

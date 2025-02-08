@@ -1,15 +1,27 @@
+require('dotenv').config();
 const express = require("express");
 const http = require('http');
+const cookieParser = require('cookie-parser');
+const cors = require('cors')
+const morgan = require('morgan')
 
 const db = require('./config/db')
-require('dotenv').config();
 
+// routes 
+const authRoutes = require('./routes/authRoutes');
 
 
 
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(cookieParser());
+app.use(cors())
+app.use(morgan('dev')) // for logging http request and monitoring and debugging
+
+
+app.use('/api/auth',authRoutes)
+
 
 db.connect()
 const PORT = process.env.PORT || 5000;
