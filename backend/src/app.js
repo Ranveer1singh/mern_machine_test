@@ -9,7 +9,7 @@ const db = require('./config/db')
 
 // routes 
 const authRoutes = require('./routes/authRoutes');
-
+const reviewRoutes = require('./routes/reviewRoutes')
 
 
 const app = express();
@@ -21,6 +21,7 @@ app.use(morgan('dev')) // for logging http request and monitoring and debugging
 
 
 app.use('/api/auth',authRoutes)
+app.use('/api/review',reviewRoutes)
 
 
 db.connect()

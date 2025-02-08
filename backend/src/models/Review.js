@@ -7,10 +7,10 @@ const reviewSchema = new mongoose.Schema({
         trim : true
     },
     rating : {
-        type : Number,
+        type : String,
         required : true,
-        min:1,
-        max:5
+        // min:1,
+        // max:5
     },
     title : {
         type : String,
@@ -18,11 +18,20 @@ const reviewSchema = new mongoose.Schema({
         trim : true
     },
     studentsWatched : {
-        type : Number,
+        type : String,
         required : true
     }
 },
 {
+
+    toJSON : {
+        transform(doc,ret){
+            delete ret.password,
+            delete ret.__v,
+            delete ret.createdAt,
+            delete ret.updatedAt
+        }
+    },
     timestamps : true
 }
 )
