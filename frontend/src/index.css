@@ -15,6 +15,7 @@
 .container_header{
   padding: 10px;
   position: absolute;
+  z-index: 999;
 }
 /* ----------Hero Section----------------- */
 /* .container{

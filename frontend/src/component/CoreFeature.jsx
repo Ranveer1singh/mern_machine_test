@@ -3,9 +3,9 @@ import React from 'react'
 const CoreFeature = () => {
   return (
     <div className="container mt-10">
- <div className="flex flex-col lg:flex-row items-center justify-center gap-10 px-10 py-16 bg-gray-50">
+ <div className="flex flex-col lg:flex-row items-center justify-center gap-10 px-10 py-16 bg-gray-50 ">
       {/* Left Section - Stats Boxes */}
-      <div className="grid grid-cols-1 gap-4 grid-rows-5  ">
+      <div className="grid grid-cols-1 gap-4 grid-rows-5   ">
         <div className="bg-white shadow-md  flex flex-col  hover:border-slate-300 hover:shadow-lg rounded justify-center items-center text-center p-4 text-orange-500 text-2xl font-bold 
           col-start-1 row-start-2 row-span-2" style={{
             height : "250px",
