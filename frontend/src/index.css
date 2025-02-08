@@ -24,3 +24,11 @@
 .background_gradient{
   background-image: linear-gradient(to right, #E0F5FA , #FFFDE6);
 }
+
+
+/* ------------ Freetutorial --------------- */
+.bg_img{
+  background-image: url("./assets/images/map.png");
+  background-position: center;
+  background-size: cover;
+}

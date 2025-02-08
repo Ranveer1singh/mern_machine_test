@@ -6,7 +6,10 @@ const FreeTutorial = () => {
     <div className="container mt-10">
       <div className="flex flex-col lg:flex-row items-center justify-center gap-10 px-10 py-16 ">
         {/* Left Section - Stats Boxes */}
+        <div className="w-full bg_img">
+
         <AdvancedCarousel />
+        </div>
 
         {/* Right Section - Text Content */}
         <div className="max-w-lg mt-10 lg:mt-0">
