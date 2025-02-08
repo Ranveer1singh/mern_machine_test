@@ -1,6 +1,6 @@
 
 const express = require('express');
-const { createReviwes } = require("../controllers/reviweController");
+const { createReviwes, updateReview, getReview, deleteReview } = require("../controllers/reviweController");
 const authMiddleware = require('../middkeware/authMiddleware');
 const multer = require('multer');
 const router = express.Router();
@@ -9,7 +9,10 @@ const upload = multer({
     dest : "uploads/"
 })
 
-router.post('/create', authMiddleware,upload.single("image"),createReviwes);
+router.post('/', authMiddleware,upload.single("image"),createReviwes);
+router.get('/', authMiddleware,getReview);
+router.put('/:id', authMiddleware,updateReview);
+router.delete('/:id', authMiddleware,deleteReview);
 // router.post('/login', login);
 
 
