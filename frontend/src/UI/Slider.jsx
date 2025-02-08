@@ -20,9 +20,9 @@ const Slider = () => {
       slidesPerView={3}
       navigation
       pagination={{ clickable: true }}
-      scrollbar={{ draggable: true }}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log('slide change')}
+    //   scrollbar={{ draggable: true }}
+    //   onSwiper={(swiper) => console.log(swiper)}
+    //   onSlideChange={() => console.log('slide change')}
     >
         {reviewData.map((item,id)=> (
              <SwiperSlide key={id}>

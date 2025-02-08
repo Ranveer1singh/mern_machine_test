@@ -14,6 +14,7 @@ export default function AdvancedCarousel() {
     { img: Feature1,  description: "How to work with prototype design with adobe xd featuring tools" },
     { img: Feature2, description: "How to work with prototype design with adobe xd featuring tools" },
     { img: Feature3, description: "How to work with prototype design with adobe xd featuring tools" },
+    { img: Feature3, description: "How to work with prototype design with adobe xd featuring tools" },
   ];
 
   return (
