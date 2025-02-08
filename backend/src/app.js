@@ -18,7 +18,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(cors())
 app.use(morgan('dev')) // for logging http request and monitoring and debugging
-
+app.use("/uploads", express.static("uploads"));
 
 app.use('/api/auth',authRoutes)
 app.use('/api/review',reviewRoutes)
