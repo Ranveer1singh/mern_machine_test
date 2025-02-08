@@ -1,6 +1,5 @@
-import React from "react";
-import Card from "../UI/Card"
-import Carousel from "../UI/Carousel";
+import React from "react"
+import Slider from "../UI/Slider";
 const Features = () => {
   return (
     <div className="continer w-full h-full mb-10 ">
@@ -12,8 +11,10 @@ const Features = () => {
           </h1>
         </div>
       </div>
-      <div className="card_container flex justify-center mb-10 w-full">
-      <Card/>
+      <div className="card_container w-full  flex justify-center ">
+      <div className="slider_container w-2/3 ">
+        <Slider />
+        </div>
       </div>
     </div>
   );

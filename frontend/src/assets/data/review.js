@@ -28,4 +28,12 @@ export const reviewData = [
               "title": "How to work with prototype design with Adobe XD featuring tools",
               "studentsWatched": 2538
     },
+            {
+              "id": 3,
+              "image": Feature3,
+              "rating": 4.5,
+              "reviews": 329,
+              "title": "How to work with prototype design with Adobe XD featuring tools",
+              "studentsWatched": 2538
+    },
 ]
